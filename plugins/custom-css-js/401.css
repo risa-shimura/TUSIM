@@ -1,0 +1,90 @@
+/* ここにCSSコードを追加 */
+/* main top*/
+.vc_section {
+  height: 550px;
+}
+.vc_section .vc_row.vc_column-gap-35 {
+  height: 100%;
+}
+.vc_section .main-container {
+  height: 100%;
+}
+
+.vc_section .wpb_column,
+.vc_column_container,
+.vc_col-sm-1,
+.mo-column-61e04d0eb34ee {
+  height: 100%;
+}
+
+.vc_section .vc_column-inner {
+  height: 100%;
+}
+
+.vc_section .wpb_wrapper {
+  height: 100%;
+}
+
+.vc_section .wpb_wrapper-inner {
+  height: 100%;
+}
+.vc_section .wpb_single_image img {
+  height: 550px;
+}
+/* main article*/
+.wpb_text_column,
+.wpb_content_element {
+  margin-bottom: 10px;
+}
+
+.containe,
+.main-container article {
+  height: 170px;
+}
+
+.grid-post-simple {
+  padding: 12px 37px;
+  height: 170px;
+}
+
+.grid-post-simple .content {
+  display: none;
+}
+
+/* footer */
+.footer a:hover,
+.footer .menu li a:hover,
+.footer .widget_nav_menu ul > li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .menu li a:before,
+.footer .widget_nav_menu ul > li a:before {
+  background: #fff;
+}
+
+.footer_v1 .widget_nav_menu ul > li a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+
+.footer .menu li a:hover::after {
+  transform: scale(1, 1);
+}
+
+.footer_v1 .footer-bottom p,
+.footer_v2 .footer-bottom p {
+  margin: 0 auto;
+}
+
+.color-main {
+  display: none;
+}
