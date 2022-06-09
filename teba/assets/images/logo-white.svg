@@ -1,0 +1,28 @@
+<svg id="w" xmlns="http://www.w3.org/2000/svg" width="330" height="88" viewBox="0 0 330 88">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f29111;
+      }
+
+      .cls-3 {
+        font-size: 100px;
+        text-anchor: middle;
+        font-family: "IBM Plex Sans";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M28.144,58.227H53.781V83.865H28.144V58.227Z"/>
+  <path id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-1" d="M2.506,32.59H28.144V58.227H2.506V32.59Z"/>
+  <path id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-2" d="M28.144,6.953H53.781V32.59H28.144V6.953Z"/>
+  <text id="Teba" class="cls-3" x="194.253" y="80.865"><tspan x="194.253">Teba</tspan></text>
+</svg>

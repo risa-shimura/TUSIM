@@ -1,0 +1,44 @@
+/*
+* Teba - Creative Multi-purpose Responsive Theme
+* Build Date: Oct 2020
+* Author: MotivoWeb
+* Copyright (C) 2020 MotivoWeb
+*/
+
+/* ------------------------------------- */
+/* TABLE OF CONTENTS
+/* -------------------------------------
+1.  Generic styles
+2.  header
+3.  about
+4.  timeline
+5.  portifolio
+6.  vedio
+7.  team
+8.  pricing
+9.  testimonial
+10. progress
+11. counter-number
+12. accordion , tabs
+13. post
+14. blog page
+15. widgets
+16. woocommerce
+17. forms
+18. footer
+19. Media Queries
+------------------------------------- */
+//  Base  colors, fonts etc...
+@import "_base/_variables.scss";
+@import "_base/_mixins.scss";
+// modules
+@import "_modules/_layouts.scss";
+@import "_modules/_header.scss";
+@import "_modules/_content.scss";
+@import "_modules/_elements.scss";
+@import "_modules/_blog.scss";
+@import "_modules/_sidebar.scss";
+@import "_modules/_woocommerce.scss";
+@import "_modules/_forms.scss";
+@import "_modules/_footer.scss";
+@import "_modules/_media.scss";

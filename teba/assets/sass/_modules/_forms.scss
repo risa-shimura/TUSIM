@@ -1,0 +1,231 @@
+/* ------------------------------------- */
+/* 16. forms ........................... */
+/* ------------------------------------- */
+/* input_field */
+textarea, input:not([type="checkbox"]):not([type="radio"]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+textarea, input, select {
+    font-size: 15px;
+    padding: 6px 15px;
+    line-height: 22px;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid #e7e7e7;
+    outline: none;
+    border-radius: 0;
+    width: 100%;
+    background-color: transparent;
+	padding-left: 18px;
+}
+input, select {
+    height: 48px;
+}
+input[type="checkbox"] {
+	height: 13px;
+	width: 13px;
+}
+textarea{
+    height: 112px;
+}
+div.wpcf7 {
+    max-width: 750px;
+    margin: 0 auto;
+}
+.wpcf7-form label{
+	width:100%;
+	font-weight:500; 
+	font-size: 15px;
+}
+.wpcf7-form .row div[class*="col-"]:not(.sm-margin) {
+    margin-bottom: 30px;
+}
+.wpcf7-form .row div.sm-margin {
+    margin-bottom: 5px;
+}
+.wpcf7-form .rm-margin .wpcf7-form-control {
+    margin-top: 0;
+}
+.wpcf7 .wpcf7-select,  input[type="Date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/select-arrow.png);
+	background-repeat: no-repeat;
+    background-position: 95% center;
+}
+input[type="Date"]:hover {
+    background-image: none;
+}
+input[type="submit"] , .wpcf7 .button{ 
+	width: 100%;
+	border: 0;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+	color: #fff;
+	@extend .bg-color-main;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 30px;
+    min-height: 50px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+	margin: 0 auto 10px;
+    display: block;
+	flex: none;
+	cursor: pointer;
+	text-decoration: none;
+	@include border-radius(4px);
+	@include single-transition(all, .4s, ease-in-out);	
+}
+.input {
+	position: relative;
+	z-index: 1;
+	vertical-align: top;
+}
+.input_field {
+	position: relative;
+	width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: 15px;
+    padding-left: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    outline: none;
+	@include border-radius(4px);
+	@include single-transition(all, .4s, ease-in-out);	
+}
+.wpcf7 .wpcf7-select.input_field,  input[type="Date"].input_field {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* wpcf7-acceptance-form */
+.wpcf7-form-control.wpcf7-acceptance{padding-left:0}
+.wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item{margin-left:0}
+.wpcf7-form-control.wpcf7-acceptance label{margin-bottom:0;font-weight:400}
+.wpcf7-form-control.wpcf7-acceptance label .wpcf7-list-item-label{position:relative;padding-left:27px}
+.wpcf7-form-control.wpcf7-acceptance label .wpcf7-list-item-label:before{
+	content:'';height:17px;width:17px;border:2px solid #e7ebef;
+	position:absolute;top:9px;left:0;cursor:pointer;
+	@include border-radius(2px);
+	-webkit-transform:translate(0,-50%);-khtml-transform:translate(0,-50%);-moz-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%);
+}
+.wpcf7-form-control.wpcf7-acceptance label .wpcf7-list-item-label:after{
+	content:'';width:7px;height:7px;
+	position:absolute;top:9px;left:5px;opacity:0;
+	-webkit-transform:translate(0,-50%);-khtml-transform:translate(0,-50%);-moz-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%);
+	-webkit-transition:all .3s linear 0ms;-khtml-transition:all .3s linear 0ms;-moz-transition:all .3s linear 0ms;-ms-transition:all .3s linear 0ms;-o-transition:all .3s linear 0ms;transition:all .3s linear 0ms;
+	@include border-radius(2px);
+	@extend .bg-color-main;
+}
+.wpcf7-form-control.wpcf7-acceptance label input{
+	z-index:99;opacity:0;height:17px;width:17px;border:2px solid #e7ebef;
+	position:absolute;top:50%;left:0;
+	-webkit-transform:translate(0,-50%);-khtml-transform:translate(0,-50%);-moz-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%);
+	cursor:pointer;
+	@include border-radius(2px);
+}
+.wpcf7-form-control.wpcf7-acceptance label input:checked+.wpcf7-list-item-label:after{opacity:1}
+.bg-dark .input_field, .bg-dark .wpcf7-select.input_field, .bg-dark input[type="Date"].input_field {
+	border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.01);
+	color: $color-dark-gray;
+}
+.input_field:focus , .input_field:hover , .input-filled .input_field {
+	 outline:none;
+	 border: 1px solid;
+	 @extend .border-color-main;
+}
+/* input_field_line */
+.input_field_line {
+	position: relative;
+	width: 100%;
+	background-color:transparent;
+	border-right:0px;
+	border-top:0px;
+	border-left:0px;
+	border-bottom:2px solid rgba(0, 0, 0, 0.08);
+	padding: 10px 0;
+    margin: 10px 0;
+	@include single-transition(all, .4s, ease-in-out);	
+}
+.input_field_line:focus , .input_field_line:hover , .input-filled .input_field_line {
+    border-bottom:2px solid;
+	@extend .border-color-main;
+    outline:none;
+}
+.bg-dark .input_field_line { border-color:rgba(255,255,255,0.3); }
+.input_field_grey{
+	position: relative;
+	width: 100%;
+	background: $color-gray;
+	color:$color-dark-gray !important;
+	padding:10px 25px;
+	border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+	@include single-transition(all, .4s, ease-in-out);	
+	&:focus , &:hover {
+		border-color: $color-gray;
+		background-color: #fff;
+        box-shadow: none;
+	}
+}
+textarea.input_field_grey{ padding:20px 25px; min-height:170px; }
+.bg-dark .input_field_grey {
+    background: rgba(255, 255, 255, 0.05);
+}
+.bg-dark .input_field_grey:focus, .bg-dark .input_field_grey:hover {
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+
+/* post-password-form */
+.post-password-form {
+	p {
+		position: relative;
+		margin-bottom: 15px;
+		label {
+			display: block;
+			width: calc(100% - 160px);
+			vertical-align: bottom;
+			font-size: 10px;
+			text-transform: uppercase;
+			line-height: 10px;
+			letter-spacing: .6px;
+		}
+	}
+	input[type="password"]{
+		display: block;
+        width: 100%;
+		height: 50px;
+		line-height: 30px;
+		padding: 5px 15px;
+		margin: 0 0 19px;
+		border: 1px solid #dadada;
+		border-radius: 4px;
+		-webkit-appearance: none;
+		margin-top: 10px;
+		margin-bottom: 0;
+		border-radius: 4px 0 0 4px;
+	}
+	input[type="submit"] {
+		position: absolute;
+		bottom: 0;
+		top: 19px;
+		right: 0;
+		padding: 0;
+		width: 160px;
+		height: 50px;
+		line-height: 50px;
+		border-radius: 0 4px 4px 0;
+		&:hover {  opacity: 0.9; }
+	}
+}

@@ -1,0 +1,15 @@
+.alignleft {
+    float: right;
+    margin: 5px 0 10px 20px;
+}
+.alignright {
+    float: left;
+    margin: 5px 20px 10px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 30px auto;
+}
+.alignnone {
+    margin: 5px 20px 10px 0;
+}
